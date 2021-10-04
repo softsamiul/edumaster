@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '../../images/showcase-img.jpeg';
-
+import './ShowCase.css';
 const ShowCase = (props) => {
     
     return (
@@ -10,7 +10,7 @@ const ShowCase = (props) => {
                 <p className="text-lg mt-4">A modern, global school for a modern, global academic experience.</p>
             </div>
             <div className="right-section md:w-2/4 w-10/12 mx-auto">
-                <img src={image} className="w-full rounded" alt="showcase img" />
+                <img src={image} className="w-full rounded showcase-img" alt="showcase img" />
             </div>
         </div>
     );

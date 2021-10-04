@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import './Navbar.css';
 const Navbar = () => {
     return (
-        <nav className="text-lg font-semibold hidden md:block">                    
-            <NavLink className="px-4" to="/home">Home</NavLink>
-            <NavLink className="px-4" to="/about">About</NavLink>
-            <NavLink className="px-4" to="/courses">Courses</NavLink>
-            <NavLink className="px-4" to="/Services">Services</NavLink>
-            <NavLink className="px-4" to="/contact">Contact</NavLink> 
+        <nav className="text-lg font-semibold hidden md:block navbar">                    
+            <NavLink className="px-4 nav-item" to="/home">Home</NavLink>
+            <NavLink className="px-4 nav-item" to="/about">About</NavLink>
+            <NavLink className="px-4 nav-item" to="/courses">Courses</NavLink>
+            <NavLink className="px-4 nav-item" to="/Services">Services</NavLink>
+            <NavLink className="px-4 nav-item" to="/contact">Contact</NavLink> 
         </nav>
     );
 };

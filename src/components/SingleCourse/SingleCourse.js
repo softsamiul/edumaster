@@ -15,7 +15,7 @@ const SingleCourse = (props) => {
     return (
         <div className="single-course-wrap p-4 rounded">
             <div>
-                <img src={thumbnail} className="rounded-lg h-60" alt="Course thumbnail" />
+                <img src={thumbnail} className="rounded-lg h-60 thumbnail" alt="Course thumbnail" />
             </div>
             <h2 className="text-2xl font-semibold py-2">{courseName}</h2>
             <h4 className="text-lg font-bold">{user}{instructor}</h4>
@@ -28,11 +28,11 @@ const SingleCourse = (props) => {
                 <p>{project} Projects</p>
                 <p>{type}</p>
             </div> */}
-            <div className="md:flex flex-none justify-between mt-2">
+            <div className="md:flex flex-none justify-between mt-2 btn-wrapper">
                 
                 <button className="py-2 px-6 bg-blue-900 text-white rounded-lg font-semibold">Enroll Now</button>
                 <NavLink to="/courses">
-                    <button className="py-2 px-6 md:inline hidden bg-green-700 text-white rounded-lg font-semibold">See Details</button>
+                    <button className="py-2 px-6 md:inline hidden bg-green-700 btn-details text-white rounded-lg font-semibold">See Details</button>
                 </NavLink>
             </div>
             
