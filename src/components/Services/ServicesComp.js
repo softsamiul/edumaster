@@ -8,8 +8,6 @@ const ServicesComp = () => {
         .then(res=>res.json())
         .then(data=>setServices(data))
     },[]);
-    console.log(services[0]);
-    
     return (
         <div>
             <div className="courses-section-tagline mb-2 text-center font-bold  py-10">

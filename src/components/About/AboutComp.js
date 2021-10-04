@@ -1,4 +1,4 @@
-import { faArrowAltCircleRight, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import aboutImg from '../../images/about-us.png';
@@ -10,11 +10,11 @@ import mahindra from '../../images/company-logo/mahindra.webp';
 import tata from '../../images/company-logo/tata.png';
 import wipro from '../../images/company-logo/wipro.png';
 import whyImg from '../../images/why-choose-us.png';
+import WeProudOf from '../WeProudOf/WeProudOf';
 import './AboutComp.css';
 
 const AboutComp = () => {
     const rightArrow = <FontAwesomeIcon style={{marginLeft:'10px'}} icon={faArrowAltCircleRight} />
-    const usersIcon = <FontAwesomeIcon style={{marginLeft:'10px'}} icon={faUsers} />
     return (
         <div className="w-4/5 mx-auto mb-10">
             {/* Acheive goals section start */}
@@ -78,31 +78,7 @@ const AboutComp = () => {
                 </div>
             </div>
             {/* We are proud section start */}
-            <div className="py-12">
-                <h2 className="text-4xl font-bold text-center mb-10">We Are Proud Of</h2>
-                <div className="grid grid-cols-4 text-center text-3xl gap-4">
-                    <div className="single-wrap p-6">
-                        <p className="text-blue-900">{usersIcon}</p>
-                        <p className="font-semibold">1500+</p>
-                        <h2>Students</h2>
-                    </div>
-                    <div className="single-wrap p-6">
-                        <p className="text-blue-900">{usersIcon}</p>
-                        <p className="font-semibold">150+</p>
-                        <h2>Total Course</h2>
-                    </div>
-                    <div className="single-wrap p-6">
-                        <p className="text-blue-900">{usersIcon}</p>
-                        <p className="font-semibold">5500+</p>
-                        <h2>Online Learners</h2>
-                    </div>
-                    <div className="single-wrap p-6">
-                        <p className="text-blue-900">{usersIcon}</p>
-                        <p className="font-semibold">10500+</p>
-                        <h2>Follower</h2>
-                    </div>
-                </div>
-            </div>
+            <WeProudOf></WeProudOf>
         </div>
     );
 };

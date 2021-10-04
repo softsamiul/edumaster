@@ -5,6 +5,7 @@ import {
 import './App.css';
 import FooterComp from "./components/Footer/FooterComp";
 import Header from "./components/Header/Header";
+import SingleCourseDetails from "./components/SingleCourseDetails/SingleCourseDetails";
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Courses from './pages/Courses';
@@ -31,8 +32,11 @@ function App() {
           <Route path="/contact">
             <Contact></Contact>
           </Route>
-          <Route path="/courses">
+          <Route exact path="/courses">
             <Courses></Courses>
+          </Route>
+          <Route path="/courses/details">
+            <SingleCourseDetails></SingleCourseDetails>
           </Route>
           <Route path="/services">
             <Services></Services>

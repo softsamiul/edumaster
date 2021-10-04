@@ -2,6 +2,7 @@ import React from 'react';
 import CoursesComp from '../components/Courses/CoursesComp';
 import ServicesComp from '../components/Services/ServicesComp';
 import ShowCase from '../components/ShowCase/ShowCase';
+import WeProudOf from '../components/WeProudOf/WeProudOf';
 
 const Home = () => {
     
@@ -13,6 +14,7 @@ const Home = () => {
             <ShowCase></ShowCase>   
             <ServicesComp></ServicesComp>
             <CoursesComp></CoursesComp>
+            <WeProudOf></WeProudOf>
          </div>
         </>
     );
