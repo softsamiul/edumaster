@@ -14,8 +14,9 @@ We are a modern, global school for a modern, global academic experience. We offe
 
 ###### Features:
 
-#^ Friendly Environment
-#^ Quality Content
-#^ Affordable Price
-#^ Learn anyting, anytime from anywhere
-#^ Structured Curriculum to expand your Knowledge
+    1. Friendly Environment
+    2. Quality Content
+    3. Affordable Price
+    4. Learn anyting, anytime from anywhere
+    5. Structured Curriculum to expand your Knowledge
+    6. And so on...
