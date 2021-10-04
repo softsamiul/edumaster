@@ -4,6 +4,7 @@ const SingleService = (props) => {
     const {title, strDesc, strImg} = props.service;
     
     return (
+        // Single services
         <div className="single-service-wrap p-4">
             <div >
                 <img src={strImg} className="md:h-36 h-24 mx-auto rounded-lg" alt="service 1 img" />

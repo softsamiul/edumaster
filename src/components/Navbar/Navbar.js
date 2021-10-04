@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 const Navbar = () => {
     return (
+        // Navbar
         <nav className="text-lg font-semibold hidden md:block navbar">                    
             <NavLink className="px-4 nav-item" to="/home">Home</NavLink>
             <NavLink className="px-4 nav-item" to="/about">About</NavLink>

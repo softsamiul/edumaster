@@ -18,9 +18,11 @@ const SingleCourse = (props) => {
     
     return (
         <div className="single-course-wrap p-4 rounded">
+            {/* Course thumbnail */}
             <div>
                 <img src={thumbnail} className="rounded-lg h-36 md:h-48 mx-auto thumbnail" alt="Course thumbnail" />
             </div>
+            {/* Course details */}
             <h2 className="md:text-xl text-lg font-base py-2">{courseName}</h2>
             <h4 className="text-base font-sm">{user}{instructor}</h4>
             <div className="flex text-sm  justify-between">

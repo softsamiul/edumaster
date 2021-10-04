@@ -11,9 +11,13 @@ const Home = () => {
     return (
         <>
          <div className="w-4/5 mx-auto">
+             {/* Showcase component added */}
             <ShowCase></ShowCase>   
+            {/* Services components added */}
             <ServicesComp></ServicesComp>
+            {/* Courses components added */}
             <CoursesComp></CoursesComp>
+            {/* We are proud of components added */}
             <WeProudOf></WeProudOf>
          </div>
         </>
