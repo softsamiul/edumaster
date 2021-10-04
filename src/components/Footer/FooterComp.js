@@ -33,7 +33,7 @@ const FooterComp = () => {
                     <p>SiteMap</p>
                 </div>
             </div>
-            <p className="text-center font-semibold py-2">&copy; All Right Reserved | Made with &hearts; by Samiul Islam</p>
+            <p className="text-center text-sm font-semibold py-2">&copy; All Right Reserved | Made with &hearts; by Samiul Islam</p>
         </div>
     );
 };

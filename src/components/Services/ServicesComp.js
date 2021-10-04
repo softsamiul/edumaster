@@ -13,7 +13,7 @@ const ServicesComp = () => {
     return (
         <div>
             <div className="courses-section-tagline mb-2 text-center font-bold  py-10">
-                <h2 className="text-4xl">Our Services</h2>
+                <h2 className="text-2xl md:text-4xl">Our Services</h2>
                 <blockquote className="italic mt-2">World's top class services available here!</blockquote>
             </div>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
