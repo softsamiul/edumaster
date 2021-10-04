@@ -1,4 +1,4 @@
-import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import aboutImg from '../../images/about-us.png';
@@ -14,6 +14,7 @@ import './AboutComp.css';
 
 const AboutComp = () => {
     const rightArrow = <FontAwesomeIcon style={{marginLeft:'10px'}} icon={faArrowAltCircleRight} />
+    const usersIcon = <FontAwesomeIcon style={{marginLeft:'10px'}} icon={faUsers} />
     return (
         <div className="w-4/5 mx-auto mb-10">
             {/* Acheive goals section start */}
@@ -24,6 +25,7 @@ const AboutComp = () => {
                 <div className="w-2/4">
                     <h2 className="text-3xl font-semibold mb-2">Achieve Your Goals</h2>
                     <p className="text-basic">We are a modern, global school for a modern, global academic experience. We offer world's top quality education. Learning isn't just limited to classes with our practice section, mock tests and lecture notes shared as PDFs for your revision. Talk with instructors, ask questions, answer live polls, and get your doubts cleared - all while the class is going on.</p>
+                    <button className="py-2 px-4 bg-blue-900 rounded-lg text-white mt-2">Enroll Now{rightArrow}</button>
                 </div>
             </div>
             {/* Trusted Company section start */}
@@ -72,6 +74,32 @@ const AboutComp = () => {
                         <div className="w-2/4">
                             <img src={whyImg} alt="why choose us img" />
                         </div>
+                    </div>
+                </div>
+            </div>
+            {/* We are proud section start */}
+            <div className="py-12">
+                <h2 className="text-4xl font-bold text-center mb-10">We Are Proud Of</h2>
+                <div className="grid grid-cols-4 text-center text-3xl gap-4">
+                    <div className="single-wrap p-6">
+                        <p className="text-blue-900">{usersIcon}</p>
+                        <p className="font-semibold">1500+</p>
+                        <h2>Students</h2>
+                    </div>
+                    <div className="single-wrap p-6">
+                        <p className="text-blue-900">{usersIcon}</p>
+                        <p className="font-semibold">150+</p>
+                        <h2>Total Course</h2>
+                    </div>
+                    <div className="single-wrap p-6">
+                        <p className="text-blue-900">{usersIcon}</p>
+                        <p className="font-semibold">5500+</p>
+                        <h2>Online Learners</h2>
+                    </div>
+                    <div className="single-wrap p-6">
+                        <p className="text-blue-900">{usersIcon}</p>
+                        <p className="font-semibold">10500+</p>
+                        <h2>Follower</h2>
                     </div>
                 </div>
             </div>
