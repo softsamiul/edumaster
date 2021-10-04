@@ -7,27 +7,27 @@ const FooterComp = () => {
     const element = <FontAwesomeIcon style={{marginRight:'15px'}} icon={faUserGraduate} />
     return (
         <div className="bg-blue-900 text-white">
-            <div className="w-4/5 mx-auto grid grid-cols-4 py-2 border-b-2">
+            <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-4 py-2 border-b-2">
                 <div>
                     <NavLink to="/">
                         <h2 className="text-4xl font-bold">{element}EDUMASTER</h2>
-                        <p className="text-base">A modern, global school for a modern, global academic experience.</p>
+                        <p className="text-base hidden md:block">A modern, global school for a modern, global academic experience.</p>
                     </NavLink>
                 </div>
-                <div className="">
+                <div className="hidden md:block">
                     <Link className="block" to="/">Home</Link>
                     <Link className="block" to="/courses">Courses</Link>
                     <Link className="block" to="/services">Services</Link>
                     <Link className="block" to="/about">About</Link>
                     <Link className="block" to="/contact">Contact</Link>
                 </div>
-                <div>
+                <div className="hidden md:block">
                     <p>Carrers</p>
                     <p>Blogs</p>
                     <p>Affiliate</p>
                     <p>Helps &bsp; Support</p>
                 </div>
-                <div>
+                <div className="hidden md:block">
                     <p>Terms</p>
                     <p>Privacy &bsp; Policy</p>
                     <p>SiteMap</p>

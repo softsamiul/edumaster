@@ -14,7 +14,7 @@ const CoursesComp = () => {
                 <h2 className="text-4xl">Courses We Offering</h2>
                 <blockquote className="italic mt-2">"Learn today to Lead tommorow."</blockquote>
             </div>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
                 {
                     courses.map(course => <SingleCourse key={course.courseId} course={course}></SingleCourse>)
                 }

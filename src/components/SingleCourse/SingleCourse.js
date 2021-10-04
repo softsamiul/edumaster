@@ -23,13 +23,13 @@ const SingleCourse = (props) => {
                 <p>{time}{duration} Hours</p>
                 <p>{priceIcon}{price}</p>
             </div>
-            <div className="flex justify-between mt-2">
+            <div className="md:flex flex-col justify-between mt-2">
                 {/* <p>{classes} Classes</p>
                 <p>{project} Projects</p>
                 <p>{type}</p> */}
                 <button className="py-2 px-6 bg-blue-900 text-white rounded-lg font-semibold">Enroll Now</button>
                 <NavLink to="/courses">
-                    <button className="py-2 px-6 bg-green-700 text-white rounded-lg font-semibold">See Details</button>
+                    <button className="py-2 px-6 md:block hidden bg-green-700 text-white rounded-lg font-semibold">See Details</button>
                 </NavLink>
             </div>
             
