@@ -18,8 +18,8 @@ const SingleCourse = (props) => {
                 <img src={thumbnail} className="rounded-lg h-36 md:h-48 mx-auto thumbnail" alt="Course thumbnail" />
             </div>
             <h2 className="md:text-xl text-lg font-base py-2">{courseName}</h2>
-            <h4 className="text-lg font-base">{user}{instructor}</h4>
-            <div className="flex justify-between">
+            <h4 className="text-base font-sm">{user}{instructor}</h4>
+            <div className="flex text-sm  justify-between">
                 <p>{time}{duration} Hours</p>
                 <p>{priceIcon}{price}</p>
             </div>
@@ -28,7 +28,7 @@ const SingleCourse = (props) => {
                 <p>{project} Projects</p>
                 <p>{type}</p>
             </div> */}
-            <div className="md:flex flex-none justify-between mt-2 btn-wrapper">
+            <div className="md:flex flex-none justify-between mt-2 btn-wrapper ">
                 
                 <button className="py-2 px-6 bg-blue-900 text-white rounded-lg font-medium">Enroll Now</button>
                 <NavLink to="/courses">
