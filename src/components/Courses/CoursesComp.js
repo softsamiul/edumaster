@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useCourses from '../../hooks/useCourses';
 import SingleCourse from '../SingleCourse/SingleCourse';
 import './CoursesComp.css';
 const CoursesComp = () => {
-    const [courses, setCourses] = useState([]);
-    useEffect(()=>{
-        fetch('./fakedbcourses.json')
-        .then(res=>res.json())
-        .then(data=>setCourses(data))
-    },[]);
+    const [courses] = useCourses();
     return (
         <div className="py-12">
             <div className="courses-section-tagline mb-2 text-center font-bold  py-3">
@@ -16,7 +12,7 @@ const CoursesComp = () => {
             </div>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
                 {
-                    courses.map(course => <SingleCourse key={course.courseId} course={course}></SingleCourse>)
+                    courses.slice(0,4).map(course => <SingleCourse key={course.courseId} course={course}></SingleCourse>)
                 }
             </div>
         </div>

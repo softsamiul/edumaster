@@ -14,7 +14,7 @@ const ServicesComp = () => {
                 <h2 className="text-2xl md:text-4xl">Our Services</h2>
                 <blockquote className="italic mt-2">World's top class services available here!</blockquote>
             </div>
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+            <div className="grid md:grid-cols-4 grid-cols-1 gap-4">
                 {
                     services.map(service => <SingleService key={service.serviceId} service={service}></SingleService>)
                 }
